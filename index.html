@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutting Game</title>
+    <script src="app.js"></script>
+    <script>
+        window.addEventListener("load", () => {
+            appCuttingGame("appCuttingGame", {
+                css: "app.css",
+                cellSize: 50,
+                colCount: 4,
+                rowCount: 4,
+                lineWidth: 1,
+                cellEmptyColor: "white",
+                cellDeffColor: "gray",
+                shapesColors: ["red", "green", "blue", "purple"],
+                buttonList: ["Change color", "Clear", "Show Answer", "Check Answer"],
+                countShapes: 2,
+                countCellsInShape: 4
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <table style="margin: 0 auto;">
+        <tr>
+            <td id="appCuttingGame"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
